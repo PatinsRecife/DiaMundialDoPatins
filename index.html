@@ -518,9 +518,10 @@
 
       collideWithWalls();
 
-      const r = formBox.getBoundingClientRect();
-      const inflated = { left: r.left - 6, right: r.right + 6, top: r.top - 6, bottom: r.bottom + 6 };
-      collideWithRect(inflated);
+       // ✅ REMOVIDO: colisão com o formulário
+  // const r = formBox.getBoundingClientRect();
+  // const inflated = { left: r.left - 6, right: r.right + 6, top: r.top - 6, bottom: r.bottom + 6 };
+  // collideWithRect(inflated);
 
       updateVisuals();
       raf = requestAnimationFrame(tick);
